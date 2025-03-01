@@ -1,0 +1,61 @@
+#carouselExample img {
+    height: auto;
+    max-height: 20vh;
+    object-fit: cover;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+aside {
+    background-color: #454545; 
+    color: white;
+    min-height: 62vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    border: none;
+}
+
+iframe{
+    padding: 50px;
+    width: 100%;
+    min-height: 62vh;
+    border: none;
+}
+
+.list-group-item {
+    border: none;
+    background-color: transparent;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.list-group-item i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+/* GALLERY */
+.gallery img {
+    transition: transform 0.3s ease-in-out;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
