@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas Bangun Datar</title>
+</head>
+<body>
+    <h2>Menghitung Luas Persegi Panjang, Bujur Sangkar, dan Segitiga</h2>
+    <p><strong>A. Nasikh Zainal Fanani | Universitas Trunojoyo Madura</strong></p>
+
+    <script>
+        // Fungsi untuk menghitung luas persegi panjang
+        function luasPersegiPanjang(panjang, lebar) {
+            return panjang * lebar;
+        }
+
+        // Fungsi untuk menghitung luas bujur sangkar
+        function luasBujurSangkar(sisi) {
+            return sisi * sisi;
+        }
+
+        // Fungsi untuk menghitung luas segitiga
+        function luasSegitiga(alas, tinggi) {
+            return (alas * tinggi) / 2;
+        }
+
+        // Contoh nilai untuk perhitungan
+        let panjang = 10, lebar = 5;
+        let sisi = 7;
+        let alas = 8, tinggi = 6;
+
+        // Menampilkan detail Persegi Panjang
+        document.write("<h3>Persegi Panjang</h3>");
+        document.write("<p>Panjang: " + panjang + " cm</p>");
+        document.write("<p>Lebar: " + lebar + " cm</p>");
+        document.write("<p>Rumus: Panjang × Lebar</p>");
+        document.write("<p>Luas: " + luasPersegiPanjang(panjang, lebar) + " cm²</p>");
+
+        // Menampilkan detail Bujur Sangkar
+        document.write("<h3>Bujur Sangkar</h3>");
+        document.write("<p>Sisi: " + sisi + " cm</p>");
+        document.write("<p>Rumus: Sisi × Sisi</p>");
+        document.write("<p>Luas: " + luasBujurSangkar(sisi) + " cm²</p>");
+
+        // Menampilkan detail Segitiga
+        document.write("<h3>Segitiga</h3>");
+        document.write("<p>Alas: " + alas + " cm</p>");
+        document.write("<p>Tinggi: " + tinggi + " cm</p>");
+        document.write("<p>Rumus: (Alas × Tinggi) ÷ 2</p>");
+        document.write("<p>Luas: " + luasSegitiga(alas, tinggi) + " cm²</p>");
+    </script>
+</body>
+</html>
